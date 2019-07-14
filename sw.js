@@ -2,7 +2,7 @@
 importScripts('js/sw-utils.js');
 
 const STATIC_CACHE = 'static-v4';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const DYNAMIC_CACHE = 'dynamic-v2';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
@@ -15,17 +15,7 @@ const APP_SHELL = [
     'img/avatars/thor.jpg',
     'img/avatars/wolverine.jpg',
     'js/app.js',
-    'js/sw-utils.js',
-    'img/splashscreens-ios/apple-launch-828x1792.png',
-    'img/splashscreens-ios/ipad_splash.png',
-    'img/splashscreens-ios/ipadpro1_splash.png',
-    'img/splashscreens-ios/ipadpro2_splash.png',
-    'img/splashscreens-ios/ipadpro3_splash.png',
-    'img/splashscreens-ios/iphone5_splash.png',
-    'img/splashscreens-ios/iphone6_splash.png',
-    'img/splashscreens-ios/iphoneplus_splash.png',
-    'img/splashscreens-ios/iphonexr_splash.png',
-    'img/splashscreens-ios/iphonexsmax_splash.png'
+    'js/sw-utils.js'
 ];
 
 const APP_SHELL_INMUTABLE = [
@@ -50,6 +40,10 @@ self.addEventListener('activate', e => {
         keys.forEach(key => {
 
             if (key !== STATIC_CACHE && key.includes('static-v')) {
+                return caches.delete(key);
+            }
+
+            if (key !== DYNAMIC_CACHE && key.includes('dynamic-v')) {
                 return caches.delete(key);
             }
 
