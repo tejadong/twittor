@@ -16,6 +16,7 @@ const APP_SHELL = [
     'img/avatars/wolverine.jpg',
     'js/app.js',
     'js/sw-utils.js',
+    'img/splashscreens-ios/apple-launch-828x1792.png',
     'img/splashscreens-ios/ipad_splash.png',
     'img/splashscreens-ios/ipadpro1_splash.png',
     'img/splashscreens-ios/ipadpro2_splash.png',
