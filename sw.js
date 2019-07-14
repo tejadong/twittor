@@ -1,7 +1,7 @@
 // imports
 importScripts('js/sw-utils.js');
 
-const STATIC_CACHE = 'static-v3';
+const STATIC_CACHE = 'static-v4';
 const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
@@ -15,7 +15,16 @@ const APP_SHELL = [
     'img/avatars/thor.jpg',
     'img/avatars/wolverine.jpg',
     'js/app.js',
-    'js/sw-utils.js'
+    'js/sw-utils.js',
+    'img/splashscreens-ios/ipad_splash.png',
+    'img/splashscreens-ios/ipadpro1_splash.png',
+    'img/splashscreens-ios/ipadpro2_splash.png',
+    'img/splashscreens-ios/ipadpro3_splash.png',
+    'img/splashscreens-ios/iphone5_splash.png',
+    'img/splashscreens-ios/iphone6_splash.png',
+    'img/splashscreens-ios/iphoneplus_splash.png',
+    'img/splashscreens-ios/iphonexr_splash.png',
+    'img/splashscreens-ios/iphonexsmax_splash.png'
 ];
 
 const APP_SHELL_INMUTABLE = [
