@@ -1,3 +1,3 @@
 # Chat de Héroes
 
-Un cascarón de chat usando jQuery para PWAs
+Una puta mierda de chat usando jQuery para PWAs
